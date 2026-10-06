@@ -4,8 +4,10 @@ Estudo gamificado para a certificação **GitHub Foundations (exame GH-900)**,
 em português. Você lê cada domínio da prova, responde quizzes, enfrenta
 chefes e ganha XP até ficar pronto para o exame.
 
+**▶ Jogar online: https://thithio.github.io/gh900-quest/**
+
 > 🇺🇸 *A gamified, Portuguese-language study game for the GitHub Foundations
-> (GH-900) certification. Static HTML/CSS/JS, no build step, runs locally.*
+> (GH-900) certification. Static HTML/CSS/JS, no build step. Play online or run locally.*
 
 ## O que tem
 
@@ -28,7 +30,9 @@ O banco tem 94 perguntas de múltipla escolha.
 
 ## Como rodar
 
-Não precisa instalar nada além de Python 3, que só serve como servidor web
+O jeito mais fácil é jogar direto pelo link acima, sem instalar nada.
+
+Para rodar na sua máquina, também não precisa instalar nada além de Python 3, que só serve como servidor web
 local:
 
 ```bash
@@ -45,7 +49,8 @@ Server do VS Code etc.).
 ## Seu progresso
 
 O progresso fica salvo no `localStorage` do navegador, preso ao endereço
-(`localhost:8900`). Se trocar de navegador ou de porta, ele não vem junto.
+(o site do GitHub Pages ou `localhost:8900`). Jogar online e jogar local
+são progressos separados, assim como trocar de navegador.
 Use **Exportar progresso** no rodapé para baixar um JSON de backup e
 **Importar** para restaurar.
 
