@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GH-900 Quest</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hud">
+    <button class="brand" data-go="map" aria-label="Voltar ao mapa">GH-900<span>QUEST</span></button>
+    <div class="hud-level">
+      <div class="hud-row">
+        <span class="lvl" id="hud-lvl">LV 1</span>
+        <span class="lvl-name" id="hud-lvl-name">Noob do init</span>
+        <span class="xp-num" id="hud-xp">0 XP</span>
+      </div>
+      <div class="bar"><div class="bar-fill" id="hud-bar"></div></div>
+      <div class="hud-next" id="hud-next"></div>
+    </div>
+    <div class="hud-stats">
+      <span title="Dias seguidos estudando" id="hud-streak">🔥 0</span>
+      <button title="Cemitério: erros para revisar" id="hud-grave" data-go="grave">🪦 0</button>
+    </div>
+  </header>
+
+  <main id="app"></main>
+
+  <footer class="foot">
+    <button id="btn-export">Exportar progresso</button>
+    <label class="file-btn">Importar<input type="file" id="btn-import" accept="application/json" hidden></label>
+    <button id="btn-reset" class="danger-link">Zerar jogo</button>
+    <span class="foot-src">Domínios: guia oficial GH-900 (jan/2026)</span>
+  </footer>
+
+  <div id="toast-layer" aria-live="polite"></div>
+  <div id="modal" class="modal" hidden></div>
+
+  <script src="content.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
